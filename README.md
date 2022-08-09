@@ -24,8 +24,8 @@ The repository includes a Example that supports the input of simulation paramete
 ## faisal.job
 Located at Examples/OUTPUT/fasial.job, this is what you will be using to submit jobs to the RAAD2 machine. in here, make sure the directories for the SRC_DIR and the WORK_DIR are correct. In addtion, export the correct GARFIELD_HOME and HEED_DATABASE
 ```
-<home driectory>/pGarfield_New/pGarfield_New
-<home directory>pGarfield_New/pGarfield_New/Heed/heed++/database/
+export GARFIELD_HOME=<home driectory>/pGarfield_New/pGarfield_New
+export HEED_DATABASE=<home directory>pGarfield_New/pGarfield_New/Heed/heed++/database/
 ```
 once you are satisfied with your card.ini and have your faisal job corrected, then you can submit your job
 ```
