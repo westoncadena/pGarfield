@@ -13,7 +13,11 @@ PARALLEL=1 GARFIELD_HEED_INTERFACE=1 make
 ```
 the PARALLEL=1 allows Garfield to use MPI's random number server and GARFIELD_HEED_INTERFACE=1 allows the Heed to use Garfield's random number server (which is now MPI's). If you wish to make the serial/series version of Garfield, ignore these two commands and just use make
 
-If you are using the RAAD2 system for TAMUQ you can use module load garfield/parallel. This will load all of the dependencies, but remeber to export Garfield home as the new tool kit after.
+If you are using the RAAD2 system for TAMUQ you can just use 
+```
+module load garfield/parallel.
+```
+This will load all of the dependencies, and then you can use PARALLEL=1 GARFIELD_HEED_INTERFACE=1 make. But remeber to export Garfield home as the new tool kit after.
 
 The repository includes a Example that supports the input of simulation parameters through a file (card file). The card file is specified through the command line argument. See Example/SRC/card.ini for a sample card file. in the file card, make sure you source the IonMobilityFile and the MeshDirectory. NumEvents is the number of tracks through the detector.
 
