@@ -15,7 +15,9 @@ the PARALLEL=1 allows Garfield to use MPI's random number server and GARFIELD_HE
 
 If you are using the RAAD2 system for TAMUQ you can just use 
 ```
-module load garfield/parallel.
+module load garfield/parallel
+export GARFIELD_HOME=<home driectory>/pGarfield_New/pGarfield_New
+PARALLEL=1 GARFIELD_HEED_INTERFACE=1 make
 ```
 This will load all of the dependencies, and then you can use PARALLEL=1 GARFIELD_HEED_INTERFACE=1 make. But remeber to export Garfield home as the new tool kit after.
 
