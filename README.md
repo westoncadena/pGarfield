@@ -26,7 +26,7 @@ PARALLEL=1 GARFIELD_HEED_INTERFACE=1 make
 The repository includes an Example folder that contains code for a simulation of a particle track through a detector. In the folder, SRC contains all the source files, while OUTPUT is where you will compile and run your code. The input of simulation parameters is through a card file. The card file is specified through the command line argument. See Example/SRC/card.ini for a sample card file. In the file card, make sure you source the IonMobilityFile and the MeshDirectory. NumEvents is the number of tracks through the detector. For all physics related changes for the simulation, you will only need to change the card.ini. Note that if you do change the Mesh Directory, make sure that the sensor's demensions lines up with it as well.
 
 ## faisal.job
-Located at Examples/OUTPUT/fasial.job, this is what you will be using to submit jobs to the RAAD2 machine. in the faisal.job file, make sure the directories for the SRC_DIR and the WORK_DIR are correct. In addtion, export the correct GARFIELD_HOME and HEED_DATABASE. For right now, the best speed up occurs at 24 cores.
+Located at Examples/OUTPUT/fasial.job, this is what you will be using to submit jobs to the RAAD2 machine. in the faisal.job file, make sure the directories for the SRC_DIR (SRC) and the WORK_DIR (OUTPUT) are correct. In addtion, export the correct GARFIELD_HOME and HEED_DATABASE. For right now, the best speed up occurs at 24 cores.
 ```
 SRC_DIR=<home driectory>/pGarfield/Example/SRC
 WORK_DIR=<home driectory>/pGarfield/Example/OUTPUT
