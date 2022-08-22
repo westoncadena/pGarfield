@@ -6,6 +6,7 @@ pull this repository off off git hub and enter the pGarfield/pGarfield_New direc
 If you are using the RAAD2 system for TAMUQ you can just use 
 ```
 git clone https://github.com/westoncadena/pGarfield.git
+cd pGarfield/pGarfield_New
 module load garfield/parallel
 export GARFIELD_HOME=<home driectory>/pGarfield/pGarfield_New
 PARALLEL=1 GARFIELD_HEED_INTERFACE=1 make
