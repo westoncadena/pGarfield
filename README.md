@@ -28,6 +28,8 @@ The repository includes an Example folder that contains code for a simulation of
 ## faisal.job
 Located at Examples/OUTPUT/fasial.job, this is what you will be using to submit jobs to the RAAD2 machine. in here, make sure the directories for the SRC_DIR and the WORK_DIR are correct. In addtion, export the correct GARFIELD_HOME and HEED_DATABASE. For right now, the best speed up occurs at 24 cores.
 ```
+SRC_DIR=<home driectory>/pGarfield/Example/SRC
+WORK_DIR=<home driectory>/pGarfield/Example/OUTPUT
 export GARFIELD_HOME=<home driectory>/pGarfield/pGarfield_New
 export HEED_DATABASE=<home directory>pGarfield/pGarfield_New/Heed/heed++/database/
 ```
