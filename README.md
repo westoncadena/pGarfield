@@ -37,7 +37,7 @@ once you are satisfied with your card.ini and have your faisal job corrected, th
 ```
 sbatch faisal.job
 ```
-If it gives you an error like such below, just restart your session with the RAAD2 computer and try again.
+If it gives you an error like such below, just restart your session with the RAAD2 system and try again.
 ```
 /ddn/home/wecaden08/pGarfield/pGarfield_New/Library/libGarfield.a(ViewDrift.o): in function `_GLOBAL__sub_I_ViewDrift.cc':
 ViewDrift.cc:(.text.startup+0xd): relocation truncated to fit: R_X86_64_PC32 against `.bss'
