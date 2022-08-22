@@ -37,3 +37,32 @@ once you are satisfied with your card.ini and have your faisal job corrected, th
 ```
 sbatch faisal.job
 ```
+If it gives you an error like such below, just restart your session with the RAAD2 computer and try again.
+```
+/ddn/home/wecaden08/pGarfield/pGarfield_New/Library/libGarfield.a(ViewDrift.o): in function `_GLOBAL__sub_I_ViewDrift.cc':
+ViewDrift.cc:(.text.startup+0xd): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+ViewDrift.cc:(.text.startup+0x20): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+ViewDrift.cc:(.text.startup+0x38): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+/ddn/home/wecaden08/pGarfield/pGarfield_New/Library/libGarfield.a(ViewBase.o): in function `_GLOBAL__sub_I_ViewBase.cc':
+ViewBase.cc:(.text.startup+0xd): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+ViewBase.cc:(.text.startup+0x20): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+ViewBase.cc:(.text.startup+0x38): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+/ddn/home/wecaden08/pGarfield/pGarfield_New/Library/libGarfield.a(TetrahedralTree.o): in function `_GLOBAL__sub_I_TetrahedralTree.cc':
+TetrahedralTree.cc:(.text.startup+0xd): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+TetrahedralTree.cc:(.text.startup+0x28): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+/ddn/home/wecaden08/pGarfield/pGarfield_New/Library/libGarfield.a(Shaper.o): in function `_GLOBAL__sub_I_Shaper.cc':
+Shaper.cc:(.text.startup+0xd): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+Shaper.cc:(.text.startup+0x28): relocation truncated to fit: R_X86_64_PC32 against `.bss'
+/ddn/home/wecaden08/pGarfield/pGarfield_New/Library/libGarfield.a(PlottingEngine.o): in function `_GLOBAL__sub_I_PlottingEngine.cc':
+PlottingEngine.cc:(.text.startup+0x13): additional relocation overflows omitted from the output
+make: *** [makefile:47: gem2B] Error 1
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+slurmstepd: error: execve(): /ddn/home/wecaden08/pGarfield/Example/OUTPUT/TEST/./gem2B: No such file or directory
+```
